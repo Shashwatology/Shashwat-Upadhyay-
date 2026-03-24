@@ -17,10 +17,28 @@ export default defineConfig(({ mode }) => ({
       manifest: {
         name: 'Shashwat Upadhyay Portfolio',
         short_name: 'Shashwat',
-        description: 'ML Researcher & Cybersecurity Student',
+        description: 'ML Researcher & AI Architect specializing in AI-driven systems and Digital Twins.',
         theme_color: '#080808',
         background_color: '#080808',
         display: 'standalone',
+        icons: [
+          {
+            src: '/favicon.png',
+            sizes: '192x192',
+            type: 'image/png'
+          },
+          {
+            src: '/favicon.png',
+            sizes: '512x512',
+            type: 'image/png'
+          },
+          {
+            src: '/favicon.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable'
+          }
+        ]
       }
     }),
     // Security headers plugin for dev server
